@@ -151,6 +151,13 @@
   line-height: 1.1;
 }
 
+.hd h1 span {
+  font-family: var(--cor-font);
+  font-size: 5.5rem;
+  font-style: italic;
+  color: var(--th-org);
+}
+
 .hd > p {
   width: 50%;
   font-size: 1rem;
