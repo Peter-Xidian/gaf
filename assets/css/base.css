@@ -1,0 +1,594 @@
+/*========== GOOGLE FONTS ==========*/
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*========== VARIABLES CSS ==========*/
+:root {
+  /*===== Colors =====*/
+  --soft-white: #fbfaf5;
+  --soft-black: #181a18;
+  --white: #ffffff;
+  --black: #0a0a0a;
+  --txt-grey: #444950;
+  --th-blue: #252b61;
+  --th-org: #f77f00;
+  --t-black: #1c1d20;
+  --t-blue: #023047;
+  --tb-dark: #1b263b;
+  --the-grey: #f6f7f9;
+  --success: #13ae8f;
+  --error: #ff3333;
+
+  /*===== Font and typography =====*/
+  --pri-font: "DM Sans", sans-serif;
+  --int-font: "Inter", sans-serif;
+  --pop-font: "Poppins", sans-serif;
+  --cor-font: "Cormorant Infant", serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --fs-9: 9rem;
+  --fs-8-5: 8.5rem;
+  --fs-8: 8rem;
+  --fs-7-5: 7.5rem;
+  --fs-7: 7rem;
+  --fs-6-5: 6.5rem;
+  --fs-6: 6rem;
+  --fs-5-5: 5.5rem;
+  --fs-5: 5rem;
+  --fs-4-5: 4.5rem;
+  --fs-4: 4rem;
+  --fs-3-5: 3.5rem;
+  --fs-3: 3rem;
+  --fs-2-5: 2.5rem;
+  --fs-2: 2rem;
+  --fs-1-5: 1.5rem;
+  --fs-1: 1rem;
+  --fs-0-95: 0.95rem;
+  --fs-0-85: 0.85rem;
+  --fs-0-75: 0.75rem;
+  --fs-0-65: 0.65rem;
+  --fs-0-5: 0.5rem;
+  --fs-0-25: 0.275rem;
+  --fs-0-2: 0.2rem;
+  /*===== Font weight =====*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /*===== Margenes Bottom =====*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  --mb-3-5: 3rem;
+  --mb-4: 4rem;
+  --mb-4-5: 4.5rem;
+  --mb-5: 5rem;
+  --mb-5-5: 5.5rem;
+  --mb-6: 6rem;
+  --mb-6-5: 6.5rem;
+  --mb-7: 7rem;
+  --mb-7-5: 7.5rem;
+  --mb-8: 8rem;
+  --mb-8-5: 8.5rem;
+  --mb-9: 9rem;
+  --mb-9-5: 9.5rem;
+  --mb-10: 10rem;
+}
+
+/*========== BASE SECTION ==========*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+/* Remove default margin */
+body,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-family: var(--pop-font);
+  font-size: var(--fs-1);
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: var(--pri-font);
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: var(--white);
+  color-scheme: light dark;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+section {
+  width: 100%;
+  padding: var(--mb-6) var(--mb-4);
+}
+
+#shadow-host-companion {
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emp {
+  color: peru;
+  font-weight: 500;
+  font-family: var(--cor-font);
+  font-style: italic;
+}
+
+button {
+  width: auto;
+  height: auto;
+  font-weight: 500;
+  font-family: var(--sec-font);
+  color: var(--black);
+  text-align: center;
+  background-color: #d4d4d4;
+  outline: none;
+  border: 2px transparent solid;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+button > p {
+  padding: var(--mb-0-75) var(--mb-1);
+  font-weight: 400;
+  background-color: transparent;
+  font-size: var(--fs-1);
+  border: none;
+}
+
+button > span {
+  height: 48px;
+  padding: 0 0.65rem;
+}
+
+.nav-btn {
+  height: 100%;
+  background-color: var(--white);
+  border: none;
+  padding: var(--mb-0-75) 1.25rem;
+}
+
+.header.active .nav-btn {
+  background-color: var(--th-org);
+}
+
+.header.active .nav-btn p {
+  color: var(--white);
+}
+
+.nav-btn:hover {
+  background-color: var(--soft-black);
+}
+
+.nav-btn:hover p {
+  color: var(--white);
+}
+
+.header.active .nav-btn:hover {
+  background-color: var(--soft-black);
+}
+
+.sec-btn {
+  border: 2px white solid;
+  background-color: var(--th-org);
+}
+
+.sec-btn:hover {
+  background-color: var(--soft-black);
+}
+
+.sec-btn p {
+  background-color: var(--white);
+}
+
+.sec-btn span {
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec-btn:hover span {
+  rotate: 45deg;
+  color: var(--soft-white);
+}
+
+/*========== MEDIA (ANIMATIONS, TRNASITIONS AND SMOOTH SCROLL) ==========*/
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.icon-light {
+  font-variation-settings: "wght" 200;
+}
+
+.icon-regular {
+  font-variation-settings: "wght" 400;
+}
+
+.icon-bold {
+  font-variation-settings: "wght" 600;
+}
+
+.icon-fill {
+  font-variation-settings: "FILL" 1, "wght" 400;
+}
+
+/*========== MEDIA (ANIMATIONS, TRNASITIONS AND SMOOTH SCROLL) ==========*/
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*========== ANIMATIONs (FADE, SCROLL) ==========*/
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeY {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeYrev {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeX {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* Keyframes for vertical scroll animation  */
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%); /* Move up by full height of container */
+  }
+}
+
+/* Keyframe animation to move the wrapper from right to left */
+@keyframes nav-left {
+  0% {
+    transform: translateX(100%); /* Start from right outside the container */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left end of the wrapper */
+  }
+}
+
+/* ------ >>>>>> ========== HEADER ========== <<<<<< ------ */
+.header {
+  position: fixed;
+  top: var(--mb-0);
+  left: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 30;
+  /* border: 1px red solid; */
+  justify-content: space-between;
+}
+
+.header.active {
+  background-color: rgba(250, 250, 250, 0.7);
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.header.active:hover {
+  background-color: var(--white);
+}
+
+.nav {
+  width: 100%;
+  /* border: 1px dodgerblue solid; */
+  justify-content: space-between;
+  border-bottom: 1px #e5e5e5 solid;
+}
+
+.header.active .nav {
+  border-bottom: none;
+}
+
+.nav-logo {
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding-left: var(--mb-2);
+}
+
+.nl {
+  flex: 0 0 auto;
+  justify-content: flex-start;
+}
+
+.nl img {
+  width: 45px;
+  object-fit: cover;
+  /* filter: invert(); */
+}
+
+.nav-menu {
+  flex: 0 0 auto;
+  height: 55px;
+  justify-content: flex-end;
+}
+
+#nm-open,
+.nm-contact,
+.nm-head {
+  display: none;
+}
+
+.nm-filter {
+  position: relative;
+  height: 100%;
+  padding: var(--mb-0-5) var(--mb-1);
+  border-right: 1px #e5e5e5 solid;
+  display: none;
+}
+
+.nf {
+  flex: 0 0 auto;
+  column-gap: var(--mb-0-25);
+  cursor: pointer;
+}
+
+.nf > p {
+  font-size: 0.95rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--soft-white);
+}
+
+.nf span {
+  font-size: 1.3rem;
+  color: var(--soft-white);
+}
+
+.nf-drop {
+  display: none;
+}
+
+.nm-ul {
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.nml {
+  flex: 0 0 auto;
+  height: 100%;
+  padding: var(--mb-0-75) var(--mb-1-5);
+  border-right: 1px #e5e5e5 solid;
+}
+
+.nml a {
+  font-size: 0.95rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--soft-white);
+}
+
+.header.active .nml a {
+  color: var(--soft-black);
+}
+
+.nml:hover {
+  background-color: var(--th-org);
+}
+
+.header.active .nml:hover {
+  background-color: teal;
+}
+
+.header.active .nml:hover a {
+  color: var(--white);
+}
+
+.nm-btn {
+  height: 100%;
+}
+
+/* ------ >>>>>> ========== FOOTER ========== <<<<<< ------ */
+
+/* ------ >>>>>> ========== MODALS ========== <<<<<< ------ */
+/* ------ ========== GET INVOLVED MODAL ========== ------ */
+.gi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100dvh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  padding: var(--mb-2);
+  animation: fade 0.2s ease-in-out;
+  display: none;
+}
+
+.gi.active {
+  display: flex;
+}
+
+.gi-container {
+  width: 100%;
+  height: 100%;
+  /* border: 1px red solid; */
+}
+
+/*===== MEDIA QUERIES =====*/
+/* Media query for screens with a maximum width of 500px */
+@media screen and (max-width: 500px) {
+  /* ------ >>>>>> ========== HEADER ========== <<<<<< ------ */
+}
+
+/* Media query for iPads-Tablets */
+@media screen and (min-width: 700px) and (max-width: 900px) {
+}
+
+/* Media query for screens with a minimum width of 1440px and a maximum width of 1600px */
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+}
+
+/* Media query for screens with a minimum width of 1650px */
+@media screen and (min-width: 1650px) {
+}
