@@ -415,6 +415,69 @@
 
 /* Media query for screens with a minimum width of 1440px and a maximum width of 1600px */
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
+  /* --------------- ========== LP-MAIN ========== ---------------*/
+  .lp-main {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /*========== >>>>> HERO SECTION <<<<< ==========*/
+  .h-data {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: var(--mb-4) var(--mb-6);
+    padding-top: var(--mb-6);
+    justify-content: flex-start;
+    align-items: flex-end;
+    z-index: 3;
+  }
+
+  .hd h1 {
+    width: 73%;
+    font-size: var(--fs-6);
+    font-weight: 400;
+    text-align: left;
+    color: var(--white);
+    line-height: 1.1;
+  }
+
+  .hd > p {
+    width: 45%;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: left;
+    color: var(--soft-white);
+  }
+
+  /*========== >>>>> ABOUT SECTION <<<<< ==========*/
+  .ab {
+    width: 100%;
+    height: 100dvh;
+    padding: 0;
+  }
+
+  .ab-container {
+    height: 100%;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    padding: var(--mb-6);
+    background-color: rgba(250, 250, 250, 0.6);
+  }
+
+  /*========== >>>>> CAUSES SECTION <<<<< ==========*/
+  .causes {
+    width: 100%;
+    padding: var(--mb-6);
+  }
+
+  .ca-container {
+    width: 100%;
+    justify-content: flex-start;
+    row-gap: var(--mb-6);
+  }
 }
 
 /* Media query for screens with a minimum width of 1650px */
