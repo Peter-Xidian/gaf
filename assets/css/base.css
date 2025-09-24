@@ -266,18 +266,22 @@ button > span {
 
 .nav-btn {
   height: 100%;
-  background-color: var(--white);
+  background-color: var(--th-org);
   border: none;
   padding: var(--mb-0-75) 1.25rem;
 }
 
+.nav-btn > p {
+  color: var(--white);
+}
+/* 
 .header.active .nav-btn {
   background-color: var(--th-org);
 }
 
 .header.active .nav-btn p {
   color: var(--white);
-}
+} */
 
 .nav-btn:hover {
   background-color: var(--soft-black);
@@ -287,9 +291,9 @@ button > span {
   color: var(--white);
 }
 
-.header.active .nav-btn:hover {
+/* .header.active .nav-btn:hover {
   background-color: var(--soft-black);
-}
+} */
 
 .pri-btn {
   border: 2px teal solid;
@@ -319,11 +323,11 @@ button > span {
 
 .sec-btn {
   border: 2px white solid;
-  background-color: var(--th-org);
+  background-color: teal;
 }
 
 .sec-btn:hover {
-  background-color: var(--soft-black);
+  background-color: var(--th-org);
 }
 
 .sec-btn p {
