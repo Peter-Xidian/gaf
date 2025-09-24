@@ -164,6 +164,7 @@
   font-weight: 300;
   text-align: left;
   color: var(--soft-white);
+  margin-bottom: var(--mb-0-25);
 }
 
 /*========== >>>>> ABOUT SECTION <<<<< ==========*/
@@ -489,4 +490,75 @@
 
 /* Media query for screens with a minimum width of 1650px */
 @media screen and (min-width: 1650px) {
+  /* --------------- ========== LP-MAIN ========== ---------------*/
+  .lp-main {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /*========== >>>>> HERO SECTION <<<<< ==========*/
+  .h-data {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: var(--mb-6);
+    padding-left: 10rem;
+    padding-top: var(--mb-6);
+    justify-content: flex-start;
+    align-items: flex-end;
+    z-index: 3;
+  }
+
+  .hd h1 {
+    width: 73%;
+    font-size: var(--fs-7);
+    font-weight: 400;
+    text-align: left;
+    color: var(--white);
+    line-height: 1.1;
+  }
+
+  .hd h1 span {
+    font-family: var(--cor-font);
+    font-size: 7.5rem;
+    font-style: italic;
+    color: var(--th-org);
+  }
+
+  .hd > p {
+    width: 42.5%;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-align: left;
+    color: var(--soft-white);
+  }
+
+  /*========== >>>>> ABOUT SECTION <<<<< ==========*/
+  .ab {
+    width: 100%;
+    height: 100dvh;
+    padding: 0;
+  }
+
+  .ab-container {
+    height: 100%;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    padding: var(--mb-8) 14rem;
+    background-color: rgba(250, 250, 250, 0.6);
+  }
+
+  /*========== >>>>> CAUSES SECTION <<<<< ==========*/
+  .causes {
+    width: 100%;
+    padding: var(--mb-8) 14rem;
+  }
+
+  .ca-container {
+    width: 100%;
+    justify-content: flex-start;
+    row-gap: var(--mb-6);
+  }
 }
