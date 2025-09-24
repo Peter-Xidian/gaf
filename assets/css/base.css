@@ -252,7 +252,7 @@ button {
 }
 
 button > p {
-  padding: var(--mb-0-75) var(--mb-1);
+  padding: var(--mb-0-75) 1.25rem;
   font-weight: 400;
   background-color: transparent;
   font-size: var(--fs-1);
@@ -260,7 +260,7 @@ button > p {
 }
 
 button > span {
-  height: 48px;
+  height: 45.6px;
   padding: 0 0.65rem;
 }
 
@@ -289,6 +289,32 @@ button > span {
 
 .header.active .nav-btn:hover {
   background-color: var(--soft-black);
+}
+
+.pri-btn {
+  border: 2px teal solid;
+  background-color: var(--white);
+}
+
+.pri-btn:hover {
+  background-color: var(--th-org);
+}
+
+.pri-btn p {
+  background-color: teal;
+  color: var(--white);
+}
+
+.pri-btn span {
+  color: var(--soft-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pri-btn:hover span {
+  rotate: 45deg;
+  color: var(--soft-white);
 }
 
 .sec-btn {
