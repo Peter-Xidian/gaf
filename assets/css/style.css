@@ -10,7 +10,7 @@
   --black: #0a0a0a;
   --txt-grey: #444950;
   --th-blue: #252b61;
-  --th-org: #f77f00;
+  --th-org: peru;
   --t-black: #1c1d20;
   --t-blue: #023047;
   --tb-dark: #1b263b;
@@ -143,20 +143,21 @@
 }
 
 .hd h1 {
-  width: 70%;
-  font-size: var(--fs-5);
+  width: 80%;
+  font-size: var(--fs-4);
   font-weight: 400;
   text-align: left;
   color: var(--white);
   line-height: 1.1;
+  /* border: 1px red solid; */
 }
 
-.hd h1 span {
+/* .hd h1 span {
   font-family: var(--cor-font);
   font-size: 5.5rem;
   font-style: italic;
   color: var(--th-org);
-}
+} */
 
 .hd > p {
   width: 50%;
@@ -165,6 +166,11 @@
   text-align: left;
   color: var(--soft-white);
   margin-bottom: var(--mb-0-25);
+}
+
+.hd-action {
+  justify-content: flex-start;
+  column-gap: var(--mb-1);
 }
 
 /*========== >>>>> ABOUT SECTION <<<<< ==========*/
@@ -304,7 +310,7 @@
   row-gap: var(--mb-1-5);
 }
 
-.ab-data p {
+.ab-data > p {
   font-size: 1.05rem;
   font-weight: 400;
   text-align: left;
@@ -444,7 +450,7 @@
   }
 
   .hd h1 {
-    width: 73%;
+    width: 85%;
     font-size: var(--fs-6);
     font-weight: 400;
     text-align: left;
@@ -453,11 +459,12 @@
   }
 
   .hd > p {
-    width: 45%;
-    font-size: 1.1rem;
+    width: 40%;
+    font-size: 1.3rem;
     font-weight: 300;
     text-align: left;
     color: var(--soft-white);
+    margin-bottom: var(--mb-0-5);
   }
 
   /*========== >>>>> ABOUT SECTION <<<<< ==========*/
@@ -512,8 +519,8 @@
   }
 
   .hd h1 {
-    width: 73%;
-    font-size: var(--fs-7);
+    width: 70%;
+    font-size: var(--fs-6);
     font-weight: 400;
     text-align: left;
     color: var(--white);

@@ -10,7 +10,7 @@
   --black: #0a0a0a;
   --txt-grey: #444950;
   --th-blue: #252b61;
-  --th-org: #f77f00;
+  --th-org: peru;
   --t-black: #1c1d20;
   --t-blue: #023047;
   --tb-dark: #1b263b;
@@ -296,16 +296,16 @@ button > span {
 } */
 
 .pri-btn {
-  border: 2px teal solid;
+  border: 2px var(--th-org) solid;
   background-color: var(--white);
 }
 
 .pri-btn:hover {
-  background-color: var(--th-org);
+  background-color: teal;
 }
 
 .pri-btn p {
-  background-color: teal;
+  background-color: var(--th-org);
   color: var(--white);
 }
 
@@ -552,10 +552,11 @@ button > span {
 }
 
 .nml a {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 400;
   text-align: center;
   color: var(--soft-white);
+  text-transform: uppercase;
 }
 
 .header.active .nml a {
